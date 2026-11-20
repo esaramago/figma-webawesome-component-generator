@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" class="wa-light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Awesome Raw HTML Preview</title>
+    <!-- INLINE_STYLES -->
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <div class="topbar-title">
+          <h1>Web Awesome Raw HTML Preview</h1>
+          <p>
+            Live <code>&lt;wa-*&gt;</code> custom elements &amp; FontAwesome SVGs styled with
+            <code>src/css/webawesome-theme.css</code> — aligned with the Figma generator matrix.
+          </p>
+        </div>
+
+        <div class="topbar-controls">
+          <label class="control-field">
+            <span>Style</span>
+            <select id="fa-style-select">
+              <option value="auto" selected>Auto</option>
+              <option value="solid">Solid</option>
+              <option value="regular">Regular</option>
+              <option value="brands">Brands</option>
+            </select>
+          </label>
+          <label class="control-field">
+            <span>Start icon</span>
+            <input id="start-icon-input" type="text" value="plus" spellcheck="false" autocomplete="off" />
+          </label>
+          <label class="control-field">
+            <span>End icon</span>
+            <input id="end-icon-input" type="text" value="arrow-right" spellcheck="false" autocomplete="off" />
+          </label>
+          <label class="checkbox-field">
+            <input id="show-icons-toggle" type="checkbox" checked />
+            <span>Show button icons</span>
+          </label>
+        </div>
+      </header>
+
+      <nav class="section-nav" aria-label="Component sections">
+        <a href="#section-button">Button (<code>wa-button</code>)</a>
+        <a href="#section-badge">Badge (<code>wa-badge</code>)</a>
+        <a href="#section-input">Input (<code>wa-input</code>)</a>
+        <a href="#section-icons">FontAwesome Icons (Raw SVG)</a>
+      </nav>
+
+      <main class="sections">
+        <section id="section-button" class="component-section">
+          <div class="section-head">
+            <h2>Button (<code>&lt;wa-button&gt;</code>)</h2>
+            <span class="meta">5 variants · 5 appearances · 3 sizes · default &amp; disabled + start/end icon slots</span>
+          </div>
+          <div id="button-showcase" class="showcase-stack"></div>
+        </section>
+
+        <section id="section-badge" class="component-section">
+          <div class="section-head">
+            <h2>Badge (<code>&lt;wa-badge&gt;</code>)</h2>
+            <span class="meta">5 variants · 4 appearances · pill toggle</span>
+          </div>
+          <div id="badge-showcase" class="showcase-stack"></div>
+        </section>
+
+        <section id="section-input" class="component-section">
+          <div class="section-head">
+            <h2>Input (<code>&lt;wa-input&gt;</code>)</h2>
+            <span class="meta">3 appearances · 3 sizes · default &amp; disabled + label &amp; hint</span>
+          </div>
+          <div id="input-showcase" class="showcase-stack"></div>
+        </section>
+
+        <section id="section-icons" class="component-section">
+          <div class="section-head">
+            <h2>FontAwesome Icons (Raw SVG)</h2>
+            <span class="meta">Same CDN SVG source used by the Figma plugin icon importer</span>
+          </div>
+          <div id="icon-gallery" class="icon-gallery"></div>
+        </section>
+      </main>
+    </div>
+    <!-- INLINE_SCRIPT -->
+  </body>
+</html>

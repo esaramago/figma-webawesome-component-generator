@@ -1,0 +1,25 @@
+:root {
+  --wa-color-brand-05: #001415;
+  --wa-color-brand-10: #001F21;
+  --wa-color-brand-20: #00282A;
+  --wa-color-brand-30: #003437;
+  --wa-color-brand-40: #004E53;
+  --wa-color-brand-50: #006E73;
+  --wa-color-brand-60: #2E989D;
+  --wa-color-brand-70: #71C3CA;
+  --wa-color-brand-80: #ADD9DC;
+  --wa-color-brand-90: #DDF4F5;
+  --wa-color-brand-95: #F3FEFF;
+
+  --wa-color-neutral-05: #111111;
+  --wa-color-neutral-10: #222222;
+  --wa-color-neutral-20: #333333;
+  --wa-color-neutral-30: #4A4A4A;
+  --wa-color-neutral-40: #666666;
+  --wa-color-neutral-50: #888888;
+  --wa-color-neutral-60: #999999;
+  --wa-color-neutral-70: #BBBBBB;
+  --wa-color-neutral-80: #CACACA;
+  --wa-color-neutral-90: #EAEAEA;
+  --wa-color-neutral-95: #FAFAFA;
+}

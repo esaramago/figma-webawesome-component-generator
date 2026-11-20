@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en" class="wa-light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Awesome Component Generator</title>
+    <!-- INLINE_STYLES -->
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div>
+          <h1 class="title">Web Awesome Generator</h1>
+          <p class="subtitle">Generate Auto Layout Figma components from <code>--wa-*</code> styles</p>
+        </div>
+        <div class="theme-pill" title="Active brand accent from Web Awesome + webawesome-theme.css">
+          <span class="theme-swatch"></span>
+          <span>Light</span>
+        </div>
+      </header>
+
+      <div class="list-header">
+        <span class="section-label">Components</span>
+        <button id="toggle-all-btn" class="link-btn" type="button">Deselect all</button>
+      </div>
+
+      <section id="component-list" class="component-list" aria-label="Component selection"></section>
+
+      <section class="font-panel" aria-label="Typography">
+        <label class="font-row" for="font-family-select">
+          <span class="section-label">Font</span>
+          <select id="font-family-select" class="style-select font-select" aria-label="Font family">
+            <option value="Montserrat">Montserrat (loading...)</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="icon-panel" aria-label="Button options">
+        <div class="icon-panel-header">
+          <span class="section-label">Button Options</span>
+          <select id="fa-style-select" class="style-select" aria-label="FontAwesome icon style">
+            <option value="auto" selected>Auto</option>
+            <option value="solid">Solid</option>
+            <option value="regular">Regular</option>
+            <option value="brands">Brands</option>
+          </select>
+        </div>
+
+        <label class="pill-option">
+          <input id="button-pill-toggle" type="checkbox" />
+          <span>Pill buttons (<code>pill</code> — rounded edges)</span>
+        </label>
+
+        <div class="icon-fields">
+          <label class="icon-field">
+            <span class="icon-field-label">Start</span>
+            <div class="icon-input-wrap">
+              <span id="start-icon-preview" class="icon-preview" aria-hidden="true"></span>
+              <input
+                id="start-icon-input"
+                class="icon-input"
+                type="text"
+                value="plus"
+                placeholder="e.g. arrow-left, check"
+                spellcheck="false"
+                autocomplete="off"
+              />
+            </div>
+          </label>
+
+          <label class="icon-field">
+            <span class="icon-field-label">End</span>
+            <div class="icon-input-wrap">
+              <span id="end-icon-preview" class="icon-preview" aria-hidden="true"></span>
+              <input
+                id="end-icon-input"
+                class="icon-input"
+                type="text"
+                value="arrow-right"
+                placeholder="e.g. arrow-right, chevron-down"
+                spellcheck="false"
+                autocomplete="off"
+              />
+            </div>
+          </label>
+        </div>
+
+        <div class="icon-actions">
+          <span id="selection-hint" class="selection-hint">Select a Button component or instance on canvas</span>
+          <button id="apply-icons-btn" class="secondary-btn" type="button" disabled>
+            Apply to Selected
+          </button>
+        </div>
+      </section>
+
+      <section id="status-box" class="status-box" aria-live="polite">
+        <div id="status-text"></div>
+        <div id="progress-track" class="progress-track" hidden>
+          <div id="progress-bar" class="progress-bar"></div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <button id="generate-btn" class="primary-btn" type="button">
+          Generate Selected Components
+        </button>
+        <div id="footer-hint" class="footer-hint"></div>
+      </footer>
+    </main>
+    <!-- INLINE_SCRIPT -->
+  </body>
+</html>

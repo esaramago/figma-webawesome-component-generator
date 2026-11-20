@@ -1,0 +1,26 @@
+{
+  "name": "figma-webawesome-component-generator",
+  "version": "1.0.0",
+  "description": "Figma plugin that generates Web Awesome components directly on the canvas",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "figma",
+    "figma-plugin",
+    "webawesome"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@awesome.me/webawesome": "^3.15.0"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.142.0",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2"
+  }
+}
